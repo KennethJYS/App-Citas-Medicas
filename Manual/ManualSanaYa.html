@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> SanaYa — Manual de Marca</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-900: #0a1f2e;
+    --green-800: #0d2b3e;
+    --green-700: #0f3f52;
+    --green-600: #1a5f6f;
+    --green-500: #2a8a94;
+    --green-400: #3db5a8;
+    --green-300: #5dd9a0;
+    --green-200: #7ae8b8;
+    --green-100: #9df5d5;
+    --green-50:  #c7fde9;
+    --teal-600: #1a5f6f;
+    --teal-400: #3db5a8;
+    --teal-200: #7ae8b8;
+    --accent:   #5dd9a0;
+    --gold:     #e4a83c;
+    --white:    #f8f9fb;
+    --gray-100: #f5f6f7;
+    --gray-200: #e8ebef;
+    --gray-400: #8a9199;
+    --gray-600: #5a6773;
+    --gray-800: #2c3e50;
+    --bg-dark:  #0a1f2e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f5f6f7;
+    color: #2c3e50;
+  }
+
+  /* ─── PORTADA ─── */
+  .cover {
+    background: linear-gradient(145deg, #0a1f2e 0%, #1a3a4a 30%, #1a5f6f 60%, #2a8a94 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(93,217,160,0.25) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: 40%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(61,181,168,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .cover-badge {
+    display: inline-block;
+    border: 1px solid rgba(93,217,160,0.4);
+    color: var(--green-200);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 48px;
+    position: relative; z-index: 1;
+  }
+
+  .cover-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative; z-index: 1;
+  }
+
+  .logo-mark {
+    width: 72px; height: 72px;
+    background: linear-gradient(135deg, var(--green-400), var(--teal-400));
+    border-radius: 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0;
+    position: relative;
+    box-shadow: 0 0 40px rgba(93,217,160,0.25);
+    border: 3px solid white;
+  }
+  
+  .logo-mark::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:white;stop-opacity:1" /><stop offset="100%" style="stop-color:%230080ff;stop-opacity:1" /></linearGradient></defs><g fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="32" y1="12" x2="32" y2="40"/><line x1="12" y2="32" x2="40" y2="32"/></g><circle cx="48" cy="20" r="12" fill="none" stroke="url(%23grad)" stroke-width="3"/><line x1="48" y1="10" x2="48" y2="14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>') no-repeat center;
+    background-size: contain;
+  }
+
+  .logo-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="white" stroke-width="3" stroke-linecap="round"><line x1="24" y1="8" x2="24" y2="32"/><line x1="8" y1="24" x2="32" y2="24"/></g><circle cx="32" cy="16" r="8" fill="none" stroke="white" stroke-width="2.5"/><line x1="32" y1="10" x2="32" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="36" y1="16" x2="40" y2="16" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>') no-repeat center;
+    background-size: contain;
+  }
+
+  .logo-wordmark {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .logo-wordmark span { color: var(--green-300); }
+
+  .cover-subtitle {
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+    position: relative; z-index: 1;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 60px;
+    position: relative; z-index: 1;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 40px;
+  }
+
+  .cover-meta-item label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 6px;
+  }
+
+  .cover-meta-item span {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* ─── SECCIONES ─── */
+  .section {
+    padding: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, rgba(93,217,160,0.2), transparent);
+    margin: 0 80px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5dd9a0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(93,217,160,0.1);
+  }
+
+  .section-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0a1f14;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .section-desc {
+    font-size: 16px;
+    color: var(--gray-600);
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 56px;
+    text-align: justify;
+  }
+
+  /* ─── DARK SECTION ─── */
+  .dark-section {
+    background: linear-gradient(145deg, #0a1f2e, #1a3a4a);
+    padding: 80px;
+  }
+
+  .dark-section .section-title { color: white; }
+  .dark-section .section-desc { color: rgba(255,255,255,0.5); }
+  .dark-section .section-label { color: var(--green-200); }
+
+  /* ─── LOGO GRID ─── */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .logo-card {
+    border-radius: 16px;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  .logo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(93,217,160,0.15);
+  }
+
+  .logo-card.dark-bg { 
+    background: linear-gradient(135deg, #1a3a4a, #1a5f6f);
+    border: 1px solid rgba(93,217,160,0.1);
+  }
+  .logo-card.light-bg { 
+    background: linear-gradient(135deg, #f8f9fb, #e8f9f5);
+    border: 1px solid rgba(93,217,160,0.15);
+  }
+  .logo-card.green-bg { 
+    background: linear-gradient(135deg, #3db5a8, #1a5f6f);
+    border: 1px solid rgba(93,217,160,0.2);
+  }
+  .logo-card.gray-bg { 
+    background: linear-gradient(135deg, #2c3e50, #3d4d5c);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .logo-display {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-mark-sm {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--green-400), var(--teal-400));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0;
+    color: white;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  .logo-mark-sm::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:white;stop-opacity:1" /><stop offset="100%" style="stop-color:%230080ff;stop-opacity:1" /></linearGradient></defs><g fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="32" y1="12" x2="32" y2="40"/><line x1="12" y2="32" x2="40" y2="32"/></g><circle cx="48" cy="20" r="12" fill="none" stroke="url(%23grad2)" stroke-width="3"/><line x1="48" y1="10" x2="48" y2="14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>') no-repeat center;
+    background-size: contain;
+  }
+
+  .logo-mark-sm::after {
+    content: '';
+    display: none;
+  }
+
+  .logo-text-white { font-size: 32px; font-weight: 700; color: white; letter-spacing: -1px; }
+  .logo-text-white span { color: var(--green-300); }
+  .logo-text-dark { font-size: 32px; font-weight: 700; color: #001a4d; letter-spacing: -1px; }
+  .logo-text-dark span { color: var(--green-500); }
+
+  .logo-card-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+  }
+
+  .logo-card.light-bg .logo-card-label { color: #8a9590; }
+
+  /* ─── CONSTRUCTION ─── */
+  .construction-box {
+    background: linear-gradient(135deg, #ffffff, #f0fdf9);
+    border: 2px solid rgba(93,217,160,0.12);
+    border-radius: 20px;
+    padding: 56px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(93,217,160,0.08);
+  }
+
+  .construction-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+
+  .unit-line {
+    position: absolute;
+    background: rgba(45,201,106,0.3);
+  }
+
+  .unit-h { height: 1px; }
+  .unit-v { width: 1px; }
+
+  .construction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .rule-card {
+    background: linear-gradient(135deg, #f4f6f4, #e8f9f5);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border: 1px solid rgba(93,217,160,0.1);
+  }
+
+  .rule-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .rule-icon.danger { background: rgba(220,50,50,0.1); color: #dc3232; }
+  .rule-icon.ok { background: rgba(93,217,160,0.15); color: #5dd9a0; }
+
+  .rule-text strong { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .rule-text p { font-size: 12px; color: var(--gray-600); line-height: 1.5; text-align: justify; }
+
+  /* ─── COLOR ─── */
+  .color-palette {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .color-swatch-group { display: flex; flex-direction: column; gap: 8px; }
+
+  .swatch-main {
+    height: 80px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+  }
+
+  .swatch-main .hex {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .swatch-main .name {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .swatch-tints {
+    display: flex;
+    gap: 4px;
+  }
+
+  .tint {
+    flex: 1;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .color-name { font-size: 11px; color: var(--gray-600); margin-top: 6px; text-align: center; }
+
+  .extended-palette {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+    margin-top: 32px;
+  }
+
+  .extended-swatch {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .ext-color {
+    height: 56px;
+    border-radius: 8px;
+  }
+
+  .ext-label {
+    font-size: 10px;
+    color: var(--gray-600);
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ─── TIPOGRAFÍA ─── */
+  .type-showcase {
+    background: linear-gradient(135deg, #f8f9fb, #e8f9f5);
+    border: 2px solid rgba(93,217,160,0.15);
+    border-radius: 20px;
+    padding: 56px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(93,217,160,0.1);
+  }
+
+  .type-sample-hero {
+    font-size: 72px;
+    font-weight: 700;
+    color: #001a4d;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .type-sample-hero span { color: var(--green-400); }
+
+  .type-meta {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e8ebef;
+  }
+
+  .type-meta-item label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 4px;
+  }
+
+  .type-meta-item span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #001a4d;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .type-scale { display: flex; flex-direction: column; gap: 20px; }
+
+  .type-row {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f0;
+  }
+
+  .type-row-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    min-width: 80px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .type-row-sample { flex: 1; color: #001a4d; }
+  .type-row-spec { font-size: 11px; color: var(--gray-400); font-family: 'DM Mono', monospace; }
+
+  .mono-box {
+    background: #f5f6f7;
+    border-radius: 12px;
+    padding: 24px 28px;
+    font-family: 'DM Mono', monospace;
+    font-size: 22px;
+    color: #001a4d;
+    letter-spacing: 2px;
+  }
+
+  .mono-box span { color: var(--green-400); }
+
+  /* ─── ICONOGRAFÍA ─── */
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .icon-item {
+    background: linear-gradient(135deg, #f8f9fb, #e8f9f5);
+    border: 1px solid rgba(93,217,160,0.12);
+    border-radius: 12px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .icon-item:hover {
+    border-color: rgba(93,217,160,0.3);
+    box-shadow: 0 4px 12px rgba(93,217,160,0.12);
+    transform: translateY(-2px);
+  }
+
+  .icon-circle {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, rgba(93,217,160,0.15), rgba(61,181,168,0.1));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #3db5a8;
+    border: 1px solid rgba(93,217,160,0.2);
+  }
+
+  .icon-name {
+    font-size: 10px;
+    color: var(--gray-400);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ─── COMPONENTES UI ─── */
+  .ui-showcase {
+    background: linear-gradient(145deg, #0a1f2e, #1a3a4a);
+    border-radius: 24px;
+    padding: 56px;
+    margin-bottom: 20px;
+  }
+
+  .ui-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* BOTONES */
+  .btn-showcase { display: flex; flex-direction: column; gap: 12px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #5dd9a0, #3db5a8);
+    color: white;
+    box-shadow: 0 4px 16px rgba(93,217,160,0.4);
+  }
+
+  .btn-secondary {
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--green-300);
+    border: 1px solid rgba(45,201,106,0.3);
+  }
+
+  .btn-danger {
+    background: rgba(220,50,50,0.15);
+    color: #f88;
+    border: 1px solid rgba(220,50,50,0.3);
+  }
+
+  /* CARDS */
+  .balance-card {
+    background: linear-gradient(135deg, #0080ff, #0052b3);
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid rgba(0,196,255,0.25);
+  }
+
+  .balance-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+  }
+
+  .balance-amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1.5px;
+    margin-bottom: 6px;
+  }
+
+  .balance-change {
+    font-size: 13px;
+    color: var(--green-300);
+    font-weight: 500;
+  }
+
+  .balance-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .action-btn {
+    flex: 1;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .action-icon {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+
+  .action-label { font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 0.5px; }
+
+  /* CATEGORY PILL */
+  .category-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+
+  .pill {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .pill-active { background: var(--green-300); color: #0a1f14; }
+  .pill-inactive { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.08); }
+
+  /* TRANSACTION LIST */
+  .tx-list { display: flex; flex-direction: column; gap: 2px; }
+
+  .tx-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+  }
+
+  .tx-icon {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .tx-info { flex: 1; }
+  .tx-name { font-size: 14px; color: rgba(255,255,255,0.85); font-weight: 500; }
+  .tx-date { font-size: 11px; color: rgba(255,255,255,0.3); }
+  .tx-amount { font-size: 15px; font-weight: 600; }
+  .tx-amount.expense { color: #f87171; }
+  .tx-amount.income { color: var(--green-300); }
+
+  /* INPUT */
+  .input-demo {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 14px 16px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+  }
+
+  .input-demo:focus {
+    border-color: var(--green-300);
+    box-shadow: 0 0 0 3px rgba(45,201,106,0.1);
+  }
+
+  .input-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  /* ─── TIPOGRAFÍA EN USO ─── */
+  .usage-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .usage-card {
+    background: linear-gradient(135deg, #f8f9fb, #e8f9f5);
+    border: 1px solid rgba(93,217,160,0.15);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(93,217,160,0.08);
+    transition: all 0.3s ease;
+  }
+
+  .usage-card:hover {
+    border-color: rgba(93,217,160,0.3);
+    box-shadow: 0 8px 24px rgba(93,217,160,0.15);
+  }
+
+  .usage-card .tag {
+    display: inline-block;
+    background: rgba(0,128,255,0.1);
+    color: var(--green-500);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  /* ─── ESPACIADO ─── */
+  .spacing-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  .spacing-bar {
+    background: linear-gradient(to right, rgba(93,217,160,0.6), rgba(93,217,160,0.1));
+    border-radius: 4px;
+    height: 12px;
+  }
+
+  .spacing-label {
+    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    color: var(--gray-600);
+    min-width: 60px;
+  }
+
+  .spacing-desc { font-size: 12px; color: var(--gray-400); }
+
+  /* ─── TONO ─── */
+  .tone-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .tone-card {
+    border-radius: 16px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tone-card.good { background: rgba(0,128,255,0.06); border: 1px solid rgba(0,128,255,0.2); }
+  .tone-card.bad { background: rgba(220,50,50,0.04); border: 1px solid rgba(220,50,50,0.15); }
+
+  .tone-header {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .tone-card.good .tone-header { color: var(--green-400); }
+  .tone-card.bad .tone-header { color: #dc3232; }
+
+  .tone-example {
+    background: rgba(0,0,0,0.04);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-left: 3px solid transparent;
+    text-align: justify;
+  }
+
+  .tone-card.good .tone-example { border-left-color: var(--green-400); }
+  .tone-card.bad .tone-example { border-left-color: #dc3232; color: var(--gray-600); text-decoration: line-through; text-decoration-color: rgba(220,50,50,0.4); }
+
+  /* ─── MOCKUP MÓVIL ─── */
+  .mobile-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+  }
+
+  .phone-frame {
+    width: 280px;
+    background: #1a3a4a;
+    border-radius: 40px;
+    padding: 24px 20px;
+    border: 2px solid #1a5f6f;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4), inset 0 1px 0 rgba(93,217,160,0.08);
+    position: relative;
+  }
+
+  .phone-notch {
+    width: 80px; height: 20px;
+    background: #1a3a4a;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .phone-status {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4px 16px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .phone-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .phone-avatar {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #3db5a8, #5dd9a0);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; color: white;
+    box-shadow: 0 2px 8px rgba(93,217,160,0.3);
+  }
+
+  .phone-toggle {
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .phone-balance-card {
+    background: linear-gradient(135deg, #2a8a94, #3db5a8);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(93,217,160,0.2);
+    box-shadow: 0 4px 16px rgba(93,217,160,0.15);
+  }
+
+  .phone-balance-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .phone-balance-amount {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+  }
+
+  .phone-balance-change {
+    font-size: 12px;
+    color: var(--green-300);
+  }
+
+  .phone-quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .phone-action {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .phone-action-icon {
+    width: 28px; height: 28px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+
+  .phone-action-label { font-size: 9px; color: rgba(255,255,255,0.4); }
+
+  .phone-cards-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .phone-mini-card {
+    border-radius: 12px;
+    padding: 14px 12px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .phone-mini-card.discover { background: linear-gradient(145deg, #2a8a94, #5dd9a0); }
+  .phone-mini-card.news { background: linear-gradient(145deg, #1a3a4a, #3db5a8); }
+
+  .phone-mini-card-arrow {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .phone-mini-card-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .phone-banner {
+    background: linear-gradient(135deg, #3db5a8, #2a8a94);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 12px rgba(93,217,160,0.2);
+  }
+
+  .phone-banner-text { font-size: 11px; font-weight: 700; color: white; line-height: 1.4; }
+  .phone-banner-cta {
+    background: rgba(255,255,255,0.15);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+  }
+
+  .phone-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .phone-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+    flex: 1;
+  }
+
+  .phone-nav-item.active { color: var(--green-300); }
+
+  .phone-nav-icon {
+    font-size: 18px;
+    height: 22px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .phone-search-btn {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--green-400), #5dd9a0);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 8px 24px rgba(93,217,160,0.5);
+    margin-top: -16px;
+    color: white;
+  }
+
+  /* ─── MOTION ─── */
+  .motion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .motion-card {
+    background: linear-gradient(145deg, #1a3a4a, #1a5f6f);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    border: 1px solid rgba(93,217,160,0.15);
+    box-shadow: 0 4px 16px rgba(93,217,160,0.1);
+  }
+
+  .motion-demo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .motion-bar {
+    width: 40px;
+    background: linear-gradient(180deg, #5dd9a0, #3db5a8);
+    border-radius: 4px;
+    animation: growBar 2s ease-in-out infinite alternate;
+    box-shadow: 0 0 16px rgba(93,217,160,0.5);
+  }
+
+  @keyframes growBar {
+    from { height: 20px; opacity: 0.4; }
+    to { height: 60px; opacity: 1; }
+  }
+
+  .motion-dot {
+    width: 16px; height: 16px;
+    background: #5dd9a0;
+    border-radius: 50%;
+    animation: pulseDot 1.5s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(93,217,160,0.6);
+  }
+
+  @keyframes pulseDot {
+    0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(93,217,160,0.6); }
+    50% { transform: scale(1.2); opacity: 0.8; box-shadow: 0 0 0 12px rgba(93,217,160,0); }
+  }
+
+  .motion-slide {
+    width: 60px; height: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .motion-knob {
+    width: 24px; height: 24px;
+    background: linear-gradient(135deg, #5dd9a0, #3db5a8);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    animation: slideKnob 2s ease-in-out infinite alternate;
+    box-shadow: 0 2px 12px rgba(93,217,160,0.6);
+  }
+
+  @keyframes slideKnob {
+    from { left: 2px; }
+    to { left: 32px; }
+  }
+
+  .motion-title { font-size: 13px; font-weight: 600; color: white; margin-bottom: 6px; }
+  .motion-spec { font-size: 11px; color: rgba(255,255,255,0.35); font-family: 'DM Mono', monospace; }
+
+  /* ─── FOOTER ─── */
+  .brand-footer {
+    background: linear-gradient(145deg, #0a1f2e, #1a3a4a);
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(93,217,160,0.15);
+  }
+
+  .footer-logo { display: flex; align-items: center; gap: 12px; }
+  .footer-logo-mark {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--green-400), var(--teal-400));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0;
+    color: white;
+    position: relative;
+  }
+  
+  .footer-logo-mark::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:white;stop-opacity:1" /><stop offset="100%" style="stop-color:%230080ff;stop-opacity:1" /></linearGradient></defs><g fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="32" y1="12" x2="32" y2="40"/><line x1="12" y2="32" x2="40" y2="32"/></g><circle cx="48" cy="20" r="12" fill="none" stroke="url(%23grad3)" stroke-width="3"/><line x1="48" y1="10" x2="48" y2="14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>') no-repeat center;
+    background-size: contain;
+  }
+
+  .footer-logo-mark::after {
+    content: '';
+    display: none;
+  }
+
+  .footer-wordmark { font-size: 20px; font-weight: 700; color: white; letter-spacing: -0.5px; }
+  .footer-wordmark span { color: var(--green-300); }
+
+  .footer-info { text-align: right; }
+  .footer-version { font-size: 11px; color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.2); margin-top: 4px; }
+
+  /* ─── SECTION NAV ─── */
+  .page-number {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    color: var(--green-400);
+    margin-bottom: 4px;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .cover { padding: 48px 32px; }
+    .section { padding: 60px 32px; }
+    .section-divider { margin: 0 32px; }
+    .logo-grid, .color-palette { grid-template-columns: 1fr 1fr; }
+    .ui-grid { grid-template-columns: 1fr; }
+    .tone-grid { grid-template-columns: 1fr; }
+    .usage-grid { grid-template-columns: 1fr; }
+    .icon-grid { grid-template-columns: repeat(3, 1fr); }
+    .extended-palette { grid-template-columns: repeat(4, 1fr); }
+    .mobile-showcase { padding: 30px 0; }
+    .motion-grid { grid-template-columns: 1fr; }
+    .brand-footer { flex-direction: column; gap: 24px; text-align: center; }
+    .footer-info { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="cover-badge">Manual de Marca — Versión 1.0</div>
+
+  <div class="cover-logo">
+    <img src="Logo SanaYa.png" alt="SanaYa" style="width: 72px; height: 72px; object-fit: cover; display: block; padding: 0; margin: 0; border-radius: 20px;"/>
+    <div class="logo-wordmark">SanaYa<span></span></div>
+  </div>
+
+  <p class="cover-subtitle">Identidad Visual · Sistema de Diseño · Guía de Uso</p>
+
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <label>Producto</label>
+      <span>Agendamiento de Citas Médicas</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Plataforma</label>
+      <span>Android</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Versión</label>
+      <span>1.0.0 — 2026</span>
+    </div>
+    <div class="cover-meta-item">
+      <label>Equipo Desarrollador</label>
+      <span>NetRunners</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="page-number">00</div>
+  <div class="section-label">Contenido</div>
+  <h2 class="section-title">Índice del<br>manual</h2>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px;">
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">01</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Identidad de Marca</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Propósito, valores, personalidad</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">02</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Logotipo</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Versiones, construcción, usos</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">03</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Paleta de Color</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Primarios, secundarios, semánticos</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">04</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Tipografía</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Familias, escala, uso</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">05</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Componentes UI</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Botones, tarjetas, inputs</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">06</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Pantallas de App</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Mockups, layout móvil</p>
+      </div>
+    </div>
+    <div style="background: linear-gradient(135deg, #f5f6f7, #e6f5ff); border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <span style="font-size: 28px; font-weight: 700; color: #5dd9a0; font-family: 'DM Mono', monospace;">07</span>
+      <div>
+        <p style="font-weight: 600; color: #001a4d; margin-bottom: 3px;">Tono & Voz</p>
+        <p style="font-size: 12px; color: var(--gray-400);">Comunicación, microcopy</p>
+      </div>
+    </div>
+  </div>
+
+<hr class="section-divider">
+
+
+<section class="section">
+  <div class="page-number">01</div>
+  <div class="section-label">Identidad de Marca</div>
+  <h2 class="section-title">Quiénes somos<br>y para qué existimos</h2>
+  <p class="section-desc">SanaYa nace para transformar el agendamiento médico en una experiencia ágil y sin complicaciones, logrando que ahorrar tiempo sea tan sencillo como dar un par de clics. Existimos para facilitar la vida de nuestros usuarios, eliminando las demoras innecesarias y optimizando cada proceso para que puedas dedicar tu energía a lo que realmente importa: disfrutar de tu familia y cuidar de ellos en todo momento con total tranquilidad.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px;">
+    <div style="background: linear-gradient(135deg, #1a3a4a, #1a5f6f); border-radius: 16px; padding: 28px; border: 1px solid rgba(93,217,160,0.15); box-shadow: 0 4px 16px rgba(93,217,160,0.1);">
+      <div style="font-size: 28px; margin-bottom: 16px;">🎯</div>
+      <h3 style="font-size: 16px; font-weight: 700; color: white; margin-bottom: 8px;">Propósito</h3>
+      <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; text-align: justify;">Existimos para eliminar el estrés del acceso a la salud y devolver el control del tiempo a las familias ecuatorianas. Buscamos que el bienestar sea la prioridad, simplificando trámites para que las personas puedan dedicar su energía a disfrutar y cuidar de sus seres queridos con total tranquilidad.</p>
+    </div>
+    <div style="background: linear-gradient(135deg, #1a5f6f, #2a8a94); border-radius: 16px; padding: 28px; border: 1px solid rgba(93,217,160,0.15); box-shadow: 0 4px 16px rgba(93,217,160,0.1);">
+      <div style="font-size: 28px; margin-bottom: 16px;">👁️</div>
+      <h3 style="font-size: 16px; font-weight: 700; color: white; margin-bottom: 8px;">Visión</h3>
+      <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; text-align: justify;">Ser la plataforma líder de gestión médica en Ecuador, reconocida por humanizar la tecnología y optimizar el tiempo de las familias a nivel nacional. Aspiramos a un futuro donde la atención de salud sea fluida e inmediata, logrando que el cuidado preventivo sea la norma en cada hogar.</p>
+    </div>
+    <div style="background: linear-gradient(135deg, #2a8a94, #5dd9a0); border-radius: 16px; padding: 28px; border: 1px solid rgba(93,217,160,0.2); box-shadow: 0 4px 16px rgba(93,217,160,0.15);">
+      <div style="font-size: 28px; margin-bottom: 16px;">⭐</div>
+      <h3 style="font-size: 16px; font-weight: 700; color: white; margin-bottom: 8px;">Misión</h3>
+      <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; text-align: justify;">Transformar el agendamiento médico en una experiencia ágil y sin complicaciones mediante una plataforma digital intuitiva que optimiza procesos en el país. Facilitamos la vida de nuestros usuarios eliminando demoras innecesarias, logrando que ahorrar tiempo sea tan sencillo como dar un par de clics.</p>
+    </div>
+  </div>
+
+  <h3 style="font-size: 22px; font-weight: 700; color: #001a4d; margin-bottom: 24px; letter-spacing: -0.5px;">Valores de marca</h3>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
+    <div style="background: #f8f9fb; border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px; border-top: 3px solid #00c4ff; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <p style="font-size: 15px; font-weight: 700; color: #001a4d; margin-bottom: 6px;">Simplicidad</p>
+      <p style="font-size: 12px; color: var(--gray-600); line-height: 1.5; text-align: justify;">La información de tus citas medicas siempre visibles y disponibles 24/7 con la posiblidad de tener tu historial médico en las manos.</p>
+    </div>
+    <div style="background: #f8f9fb; border: 2px solid rgba(0,196,255,0.15); border-radius: 12px; padding: 20px; border-top: 3px solid #0080ff; box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+      <p style="font-size: 15px; font-weight: 700; color: #001a4d; margin-bottom: 6px;">Empatía</p>
+      <p style="font-size: 12px; color: var(--gray-600); line-height: 1.5; text-align: justify;">Priorizamos el bienestar familiar y el trato humano por encima de cualquier proceso técnico.</p>
+    </div>
+    <div style="background: #f8f9fb; border: 2px solid rgba(228,168,60,0.2); border-radius: 12px; padding: 20px; border-top: 3px solid #e4a83c; box-shadow: 0 2px 8px rgba(228,168,60,0.08);">
+      <p style="font-size: 15px; font-weight: 700; color: #001a4d; margin-bottom: 6px;">Confianza</p>
+      <p style="font-size: 12px; color: var(--gray-600); line-height: 1.5; text-align: justify;">Brindamos seguridad y respaldo total en cada agendamiento para que gestiones tu salud con absoluta tranquilidad.</p>
+    </div>
+    <div style="background: #f8f9fb; border: 2px solid rgba(93,221,160,0.2); border-radius: 12px; padding: 20px; border-top: 3px solid #5ddda0; box-shadow: 0 2px 8px rgba(93,221,160,0.1);">
+      <p style="font-size: 15px; font-weight: 700; color: #001a4d; margin-bottom: 6px;">Integridad</p>
+      <p style="font-size: 12px; color: var(--gray-600); line-height: 1.5; text-align: justify;">Actuamos con total transparencia y seguridad para construir una relación de confianza absoluta con el paciente.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+
+<section class="section">
+  <div class="page-number">02</div>
+  <div class="section-label">Logotipo</div>
+  <h2 class="section-title">Símbolo de<br>identidad</h2>
+  <p class="section-desc">El logotipo de SanaYa fusiona una cruz de crecimiento, un reloj de agilidad y una flecha ascendente con tipografía robusta para proyectar una gestión de salud moderna, confiable y eficiente.</p>
+
+  <div class="logo-grid">
+    <div class="logo-card dark-bg">
+      <div class="logo-display" style="display: flex; align-items: center; gap: 16px;">
+        <img src="Logo SanaYa.png" alt="Logo SanaYa" style="width: 60px; height: 60px; object-fit: contain; flex-shrink: 0; border-radius: 12px;">
+        <div class="logo-text-white">SanaYa</div>
+      </div>
+      <span class="logo-card-label">Versión principal — Fondo oscuro</span>
+    </div>
+    <div class="logo-card light-bg">
+      <div class="logo-display" style="display: flex; align-items: center; gap: 16px;">
+        <img src="Logo SanaYa.png" alt="Logo SanaYa" style="width: 60px; height: 60px; object-fit: contain; flex-shrink: 0; border-radius: 12px;">
+        <div class="logo-text-dark">SanaYa</div>
+      </div>
+      <span class="logo-card-label" style="color: #8a9590;">Versión secundaria — Fondo claro</span>
+    </div>
+    <div class="logo-card green-bg">
+      <div class="logo-display" style="display: flex; align-items: center; gap: 16px;">
+        <img src="Logo SanaYa.png" alt="Logo SanaYa" style="width: 60px; height: 60px; object-fit: contain; flex-shrink: 0; border-radius: 12px;">
+        <div class="logo-text-white">SanaYa</div>
+      </div>
+      <span class="logo-card-label">Versión sobre color de marca</span>
+    </div>
+    <div class="logo-card gray-bg">
+      <div class="logo-display" style="display: flex; align-items: center; gap: 16px;">
+        <img src="Logo SanaYa.png" alt="Logo SanaYa" style="width: 60px; height: 60px; object-fit: contain; flex-shrink: 0; border-radius: 12px;">
+        <div class="logo-text-white">SanaYa</div>
+      </div>
+      <span class="logo-card-label">Versión sobre gris oscuro</span>
+    </div>
+  </div>
+
+  <div class="construction-box">
+    <h4 style="font-size: 14px; font-weight: 600; color: var(--gray-600); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 32px;">Zona de exclusión</h4>
+    <div class="construction-logo">
+      <div class="unit-line unit-h" style="top: -16px; left: -16px; right: -16px;"></div>
+      <div class="unit-line unit-h" style="bottom: -16px; left: -16px; right: -16px;"></div>
+      <div class="unit-line unit-v" style="left: -16px; top: -16px; bottom: -16px;"></div>
+      <div class="unit-line unit-v" style="right: -16px; top: -16px; bottom: -16px;"></div>
+      <img src="Logo SanaYa.png" alt="Logo SanaYa" style="width: 80px; height: 80px; object-fit: contain; margin: 16px;">
+      <div style="font-size: 40px; font-weight: 700; color: #0a1f2e; letter-spacing: -1px; margin-left: 8px;">SanaYa</div>
+    </img>
+    <p style="font-size: 13px; color: var(--gray-400); margin-top: 24px; line-height: 1.6;">La zona de exclusión mínima equivale a la altura del ícono de SanaYa en todos los lados. Nunca colocar otro elemento dentro de esta zona.</p>
+  </div>
+
+  <h4 style="font-size: 14px; font-weight: 600; color: var(--gray-600); letter-spacing: 1px; text-transform: uppercase; margin: 40px 0 20px;">Uso correcto del logotipo SanaYa</h4>
+  <div class="construction-grid">
+    <div class="rule-card">
+      <div class="rule-icon ok">✓</div>
+      <div class="rule-text">
+        <strong>Sobre fondos con contraste</strong>
+        <p>Usar siempre SanaYa sobre fondos que garanticen la legibilidad del icono y aseguren que el gradiente verde-teal destaque.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon danger">✗</div>
+      <div class="rule-text">
+        <strong>No distorsionar proporciones</strong>
+        <p>Nunca estirar, comprimir o rotar el logotipo de SanaYa. Mantener siempre la proporción original del icono.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon ok">✓</div>
+      <div class="rule-text">
+        <strong>Tamaño mínimo digital: 60px</strong>
+        <p>En pantalla, el logotipo de SanaYa no debe aparecer por debajo de 60px de ancho para preservar su legibilidad.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon danger">✗</div>
+      <div class="rule-text">
+        <strong>No cambiar colores del símbolo</strong>
+        <p>El gradiente verde brillante (#5DD9A0) y teal profundo (#1A5F6F) de SanaYa no deben sustituirse por otros colores.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon ok">✓</div>
+      <div class="rule-text">
+        <strong>Versión icono cuadrado para espacios reducidos</strong>
+        <p>Usar solo el símbolo cuadrado de SanaYa cuando el espacio disponible sea menor a 60px.</p>
+      </div>
+    </div>
+    <div class="rule-card">
+      <div class="rule-icon danger">✗</div>
+      <div class="rule-text">
+        <strong>No agregar efectos adicionales</strong>
+        <p>El logotipo de SanaYa no debe incluir sombras externas, contornos, brillos ni texturas que alteren su identidad visual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+
+<section class="section">
+  <div class="page-number">03</div>
+  <div class="section-label">Sistema de Color</div>
+  <h2 class="section-title">Paleta<br>cromática</h2>
+  <p class="section-desc">El verde brillante es la voz visual de SanaYa. Comunica crecimiento, salud y sofisticación en la tecnología médica. Los colores secundarios articulan estados y jerarquías de información.</p>
+
+  <h4 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px;">Colores primarios</h4>
+  <div class="color-palette">
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #3db5a8, #1a5f6f);">
+        <div class="name">Teal Suave</div>
+        <div class="hex">#3DB5A8</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #c7fde9;"></div>
+        <div class="tint" style="background: #9ef5d6;"></div>
+        <div class="tint" style="background: #7ae8b8;"></div>
+        <div class="tint" style="background: #5dd9a0;"></div>
+        <div class="tint" style="background: #4ac89f;"></div>
+        <div class="tint" style="background: #3db5a8;"></div>
+        <div class="tint" style="background: #1a5f6f;"></div>
+      </div>
+      <div class="color-name">Principal / Identidad SanaYa</div>
+    </div>
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #0099cc, #00698a);">
+        <div class="name">Azul Pacífico</div>
+        <div class="hex">#0099CC</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #cce7f2;"></div>
+        <div class="tint" style="background: #99cfe5;"></div>
+        <div class="tint" style="background: #66b8d9;"></div>
+        <div class="tint" style="background: #33a0cc;"></div>
+        <div class="tint" style="background: #0099cc;"></div>
+        <div class="tint" style="background: #0077b8;"></div>
+        <div class="tint" style="background: #00698a;"></div>
+      </div>
+      <div class="color-name">Confianza Médica</div>
+    </div>
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #1a5f6f, #0a1f2e);">
+        <div class="name">Teal Profundo</div>
+        <div class="hex">#1A5F6F</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #b3e6eb;"></div>
+        <div class="tint" style="background: #80d4da;"></div>
+        <div class="tint" style="background: #4dc3c9;"></div>
+        <div class="tint" style="background: #2a8a94;"></div>
+        <div class="tint" style="background: #1a5f6f;"></div>
+        <div class="tint" style="background: #0f3a47;"></div>
+        <div class="tint" style="background: #0a1f2e;"></div>
+      </div>
+      <div class="color-name">Secundario</div>
+    </div>
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #2a8a94, #0a1f2e);">
+        <div class="name">Navy Oscuro</div>
+        <div class="hex">#0A1F2E</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #b3e6eb;"></div>
+        <div class="tint" style="background: #80d4da;"></div>
+        <div class="tint" style="background: #4dc3c9;"></div>
+        <div class="tint" style="background: #2a8a94;"></div>
+        <div class="tint" style="background: #1a5f6f;"></div>
+        <div class="tint" style="background: #0f3a47;"></div>
+        <div class="tint" style="background: #0a1f2e;"></div>
+      </div>
+      <div class="color-name">Soporte Oscuro</div>
+    </div>
+
+  <h4 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px; margin-top: 28px;">Colores neutrales</h4>
+  <div class="color-palette">
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #f8f9fb, #e6f5ff); border: 2px solid rgba(0,196,255,0.25); box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+        <div class="name">Blanco Clínico</div>
+        <div class="hex">#F8F9FB</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #ffffff;"></div>
+        <div class="tint" style="background: #fafbfc;"></div>
+        <div class="tint" style="background: #f8f9fb;"></div>
+        <div class="tint" style="background: #f5f6f7;"></div>
+        <div class="tint" style="background: #f0f1f3;"></div>
+        <div class="tint" style="background: #e8ebef;"></div>
+        <div class="tint" style="background: #e0e3e8;"></div>
+      </div>
+      <div class="color-name">Superficie Principal</div>
+    </div>
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: linear-gradient(135deg, #ffffff, #e6f5ff); border: 2px solid rgba(0,196,255,0.25); box-shadow: 0 2px 8px rgba(0,196,255,0.08);">
+        <div class="name">Blanco Puro</div>
+        <div class="hex">#FFFFFF</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #ffffff;"></div>
+        <div class="tint" style="background: #fafafa;"></div>
+        <div class="tint" style="background: #f5f5f5;"></div>
+        <div class="tint" style="background: #f0f0f0;"></div>
+        <div class="tint" style="background: #e8e8e8;"></div>
+        <div class="tint" style="background: #d0d0d0;"></div>
+        <div class="tint" style="background: #b0b0b0;"></div>
+      </div>
+      <div class="color-name">Neutro Claro</div>
+    </div>
+    <div class="color-swatch-group">
+      <div class="swatch-main" style="background: #1a1a1a;">
+        <div class="name">Negro Sólido</div>
+        <div class="hex">#1A1A1A</div>
+      </div>
+      <div class="swatch-tints">
+        <div class="tint" style="background: #000000;"></div>
+        <div class="tint" style="background: #0d0d0d;"></div>
+        <div class="tint" style="background: #1a1a1a;"></div>
+        <div class="tint" style="background: #262626;"></div>
+        <div class="tint" style="background: #333333;"></div>
+        <div class="tint" style="background: #404040;"></div>
+        <div class="tint" style="background: #4d4d4d;"></div>
+      </div>
+      <div class="color-name">Texto y Bordes</div>
+    </div>
+
+  <h4 style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px; margin-top: 40px;">Uso semántico en la UI</h4>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 400px;">
+    <div style="background: rgba(45,201,106,0.1); border: 1px solid rgba(45,201,106,0.25); border-radius: 12px; padding: 14px;">
+      <div style="width: 10px; height: 10px; background: #2dc96a; border-radius: 50%; margin-bottom: 8px;"></div>
+      <p style="font-size: 12px; font-weight: 600; color: #0a1f14; margin-bottom: 3px;">Ingreso / Éxito</p>
+      <p style="font-size: 10px; color: var(--gray-600); line-height: 1.3;">Entradas de dinero, confirmaciones.</p>
+    </div>
+    <div style="background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.25); border-radius: 12px; padding: 14px;">
+      <div style="width: 10px; height: 10px; background: #f87171; border-radius: 50%; margin-bottom: 8px;"></div>
+      <p style="font-size: 12px; font-weight: 600; color: #0a1f14; margin-bottom: 3px;">Gasto / Error</p>
+      <p style="font-size: 10px; color: var(--gray-600); line-height: 1.3;">Salidas de dinero, errores.</p>
+    </div>
+    <div style="background: rgba(228,168,60,0.1); border: 1px solid rgba(228,168,60,0.25); border-radius: 12px; padding: 14px;">
+      <div style="width: 10px; height: 10px; background: #e4a83c; border-radius: 50%; margin-bottom: 8px;"></div>
+      <p style="font-size: 12px; font-weight: 600; color: #0a1f14; margin-bottom: 3px;">Advertencia</p>
+      <p style="font-size: 10px; color: var(--gray-600); line-height: 1.3;">Presupuesto límite, recordatorios.</p>
+    </div>
+    <div style="background: rgba(26,138,124,0.1); border: 1px solid rgba(26,138,124,0.25); border-radius: 12px; padding: 14px;">
+      <div style="width: 10px; height: 10px; background: #1a8a7c; border-radius: 50%; margin-bottom: 8px;"></div>
+      <p style="font-size: 12px; font-weight: 600; color: #0a1f14; margin-bottom: 3px;">Informativo</p>
+      <p style="font-size: 10px; color: var(--gray-600); line-height: 1.3;">Datos analíticos, simulaciones.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+
+<section class="section">
+  <div class="page-number">04</div>
+  <div class="section-label">Tipografía</div>
+  <h2 class="section-title">Sistema<br>tipográfico</h2>
+  <p class="section-desc">Dos familias tipográficas que equilibran personalidad y función. Space Grotesk para interfaces y comunicación; DM Mono para datos financieros precisos.</p>
+
+  <div class="type-showcase">
+    <div class="type-sample-hero">Agenda y cuida<br><span>tu bienestar.</span></div>
+    <div class="type-meta">
+      <div class="type-meta-item">
+        <label>Familia</label>
+        <span>Space Grotesk</span>
+      </div>
+      <div class="type-meta-item">
+        <label>Peso</label>
+        <span>700 Bold</span>
+      </div>
+      <div class="type-meta-item">
+        <label>Tamaño</label>
+        <span>72px / 1.0</span>
+      </div>
+      <div class="type-meta-item">
+        <label>Tracking</label>
+        <span>-3px</span>
+      </div>
+    </div>
+    <div class="type-scale">
+      <div class="type-row">
+        <span class="type-row-label">H1</span>
+        <span class="type-row-sample" style="font-size: 40px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.1;">Tus próximas citas</span>
+        <span class="type-row-spec">40px / 700 / -1.5px</span>
+      </div>
+      <div class="type-row">
+        <span class="type-row-label">H2</span>
+        <span class="type-row-sample" style="font-size: 28px; font-weight: 700; letter-spacing: -0.8px;">Médicos disponibles</span>
+        <span class="type-row-spec">28px / 700 / -0.8px</span>
+      </div>
+      <div class="type-row">
+        <span class="type-row-label">H3</span>
+        <span class="type-row-sample" style="font-size: 20px; font-weight: 600; letter-spacing: -0.3px;">Historial médico</span>
+        <span class="type-row-spec">20px / 600 / -0.3px</span>
+      </div>
+      <div class="type-row">
+        <span class="type-row-label">Body</span>
+        <span class="type-row-sample" style="font-size: 15px; font-weight: 400; line-height: 1.6; color: var(--gray-600);">Tu próxima cita con el Dr. García es mañana a las 10:00 AM en nuestro consultorio.</span>
+        <span class="type-row-spec">15px / 400 / 1.6</span>
+      </div>
+      <div class="type-row">
+        <span class="type-row-label">Caption</span>
+        <span class="type-row-sample" style="font-size: 12px; font-weight: 400; color: var(--gray-400); letter-spacing: 0.3px;">Confirmada hace 2 horas</span>
+        <span class="type-row-spec">12px / 400 / +0.3px</span>
+      </div>
+      <div class="type-row">
+        <span class="type-row-label">Label</span>
+        <span class="type-row-sample" style="font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--green-500);">Medicina General</span>
+        <span class="type-row-spec">10px / 600 / +2px / uppercase</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: white; border: 1px solid #e0e8e2; border-radius: 20px; padding: 40px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+      <div>
+        <div class="section-label" style="margin-bottom: 6px;">Tipografía de datos</div>
+        <h3 style="font-size: 22px; font-weight: 700; color: #0a1f14; letter-spacing: -0.5px;">DM Mono</h3>
+        <p style="font-size: 14px; color: var(--gray-600); margin-top: 6px;">Para horarios de citas, información médica y datos técnicos precisos.</p>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 6px;">Pesos disponibles</div>
+        <div style="font-family: 'DM Mono', monospace; font-size: 13px; color: #0a1f14;">400 Regular · 500 Medium</div>
+      </div>
+    </div>
+    <div class="mono-box">
+      <span>Lunes 15 Mayo</span><span style="color: var(--gray-400);"> · </span><span style="color: var(--green-400);">10:00 AM</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px;">
+      <div style="background: #f4f6f4; border-radius: 10px; padding: 16px; font-family: 'DM Mono', monospace;">
+        <div style="font-size: 10px; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 6px;">DR. GARCÍA</div>
+        <div style="font-size: 24px; color: var(--green-500);">10:00 AM</div>
+      </div>
+      <div style="background: #f4f6f4; border-radius: 10px; padding: 16px; font-family: 'DM Mono', monospace;">
+        <div style="font-size: 10px; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 6px;">CONSULTORIO</div>
+        <div style="font-size: 24px; color: #001a4d;">Centro</div>
+      </div>
+      <div style="background: #f4f6f4; border-radius: 10px; padding: 16px; font-family: 'DM Mono', monospace;">
+        <div style="font-size: 10px; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 6px;">ESTADO</div>
+        <div style="font-size: 24px; color: var(--gray-800);">✓ Confirmada</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+
+<div class="dark-section">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="page-number" style="color: var(--green-100);">05</div>
+    <div class="section-label">Componentes UI</div>
+    <h2 class="section-title">Biblioteca de<br>componentes</h2>
+    <p class="section-desc">Los componentes de SanaYa están diseñados tanto para fondos claros como oscuros, adaptándose perfectamente a las preferencias del usuario. Existe una opción en la aplicación para activar el modo oscuro. Cada componente transmite confianza, seguridad y facilidad en la gestión de citas médicas.</p>
+
+    <div class="ui-grid">
+      <div>
+        <h4 style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 20px;">Botones</h4>
+        <div class="btn-showcase">
+          <button class="btn btn-primary">Agendar cita</button>
+          <button class="btn btn-secondary">Ver historial médico</button>
+          <button class="btn btn-ghost">Compartir perfil médico</button>
+          <button class="btn btn-danger">Cancelar cita</button>
+        </div>
+
+        <h4 style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin: 28px 0 16px;">Inputs</h4>
+        <label class="input-label">Motivo de la cita</label>
+        <input class="input-demo" type="text" placeholder="Ej. Consulta general..." value="Consulta médica">
+        <label class="input-label">Síntomas principales</label>
+        <input class="input-demo" type="text" placeholder="Ej. Dolor de cabeza...">
+      </div>
+
+      <div>
+        <h4 style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px;">Tarjeta de información</h4>
+        <div class="balance-card">
+          <div class="balance-label">Próxima cita agendada</div>
+          <div class="balance-amount">Mañana 10:00</div>
+          <div class="balance-change">↑ Con Dra. Martínez · Consultorio Centro</div>
+          <div class="balance-actions">
+            <div class="action-btn">
+              <div class="action-icon">✓</div>
+              <div class="action-label">Confirmar</div>
+            </div>
+            <div class="action-btn">
+              <div class="action-icon">📝</div>
+              <div class="action-label">Detalles</div>
+            </div>
+            <div class="action-btn">
+              <div class="action-icon">🕐</div>
+              <div class="action-label">Reagendar</div>
+            </div>
+            <div class="action-btn">
+              <div class="action-icon">⋮⋮</div>
+              <div class="action-label">Más</div>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin: 24px 0 12px;">Especialidades</h4>
+        <div class="category-pills">
+          <span class="pill pill-active">Todos</span>
+          <span class="pill pill-inactive">Medicina General</span>
+          <span class="pill pill-inactive">Cardiología</span>
+          <span class="pill pill-inactive">Dermatología</span>
+          <span class="pill pill-inactive">Pediatría</span>
+        </div>
+
+        <div class="tx-list">
+          <div class="tx-item">
+            <div class="tx-icon" style="background: rgba(45,201,106,0.12);">🏥</div>
+            <div class="tx-info">
+              <div class="tx-name">Consulta con Dr. García</div>
+              <div class="tx-date">Mañana, 10:00 · Medicina General</div>
+            </div>
+            <div class="tx-amount income">Confirmada</div>
+          </div>
+          <div class="tx-item">
+            <div class="tx-icon" style="background: rgba(26,138,124,0.12);">❤️</div>
+            <div class="tx-info">
+              <div class="tx-name">Cita con Dra. Martínez</div>
+              <div class="tx-date">Lunes, 14:30 · Cardiología</div>
+            </div>
+            <div class="tx-amount income">Pendiente</div>
+          </div>
+          <div class="tx-item">
+            <div class="tx-icon" style="background: rgba(228,168,60,0.12);">👶</div>
+            <div class="tx-info">
+              <div class="tx-name">Pediatría - Revisión</div>
+              <div class="tx-date">Jueves, 09:00 · Pediátrica</div>
+            </div>
+            <div class="tx-amount income">Confirmada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section">
+  <div class="page-number">06</div>
+  <div class="section-label">Pantallas de la App</div>
+  <h2 class="section-title">App en<br>contexto</h2>
+  <p class="section-desc">Las pantallas de SanaYa se construyen de forma nativa para <strong>Android</strong> sobre fondos verde-oscuro profundo. La información de citas médicas y el bienestar son los protagonistas.</p>
+
+  <div class="mobile-showcase" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px; max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 0;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Login</p>
+      <img src="login.png" alt="Login SanaYa" style="width: 100%; max-width: 280px; height: auto; display: block; border-radius: 35px;">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Inicio</p>
+      <img src="inicio.png" alt="Pantalla Inicio SanaYa" style="width: 100%; max-width: 280px; height: auto; display: block; border-radius: 35px;">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Agendar Cita</p>
+      <img src="citas.png" alt="Agendar Cita SanaYa" style="width: 100%; max-width: 280px; height: auto; display: block; border-radius: 35px;">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600;">ChatBot</p>
+      <img src="chatbot.png" alt="ChatBot SanaYa" style="width: 100%; max-width: 280px; height: auto; display: block; border-radius: 35px;">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; grid-column: 1 / -1; justify-self: center;">
+      <p style="text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Perfil</p>
+      <img src="perfil.png" alt="Perfil SanaYa" style="width: 100%; max-width: 280px; height: auto; display: block; border-radius: 35px;">
+    </div>
+  </div>
+
+</section>
+
+<hr class="section-divider">
+
+
+<section class="section">
+  <div class="page-number">07</div>
+  <div class="section-label">Tono & Voz</div>
+  <h2 class="section-title">Como habla<br>SanaYa</h2>
+  <p class="section-desc">SanaYa habla como un asesor de salud moderno que entiende la importancia del cuidado médico: directo, empático y sin jerga técnica innecesaria. Informa con claridad y tranquiliza sin presión.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 40px;">
+    <div style="text-align: center; padding: 24px 16px; background: white; border: 1px solid #e0e8e2; border-radius: 12px;">
+      <div style="font-size: 28px; margin-bottom: 10px;">💡</div>
+      <p style="font-size: 14px; font-weight: 700; color: #0a1f14; margin-bottom: 4px;">Claro</p>
+      <p style="font-size: 12px; color: var(--gray-600);">Sin tecnicismos innecesarios tributarios. Información directa.</p>
+    </div>
+    <div style="text-align: center; padding: 24px 16px; background: white; border: 1px solid #e0e8e2; border-radius: 12px;">
+      <div style="font-size: 28px; margin-bottom: 10px;">🤝</div>
+      <p style="font-size: 14px; font-weight: 700; color: #0a1f14; margin-bottom: 4px;">Cercano</p>
+      <p style="font-size: 12px; color: var(--gray-600);">Habla de "tus deducciones", no de "el contribuyente".</p>
+    </div>
+    <div style="text-align: center; padding: 24px 16px; background: white; border: 1px solid #e0e8e2; border-radius: 12px;">
+      <div style="font-size: 28px; margin-bottom: 10px;">📊</div>
+      <p style="font-size: 14px; font-weight: 700; color: #0a1f14; margin-bottom: 4px;">Preciso</p>
+      <p style="font-size: 12px; color: var(--gray-600);">Datos exactos del SRI. Sin vaguedades ni estimaciones ocultas.</p>
+    </div>
+    <div style="text-align: center; padding: 24px 16px; background: white; border: 1px solid #e0e8e2; border-radius: 12px;">
+      <div style="font-size: 28px; margin-bottom: 10px;">🚀</div>
+      <p style="font-size: 14px; font-weight: 700; color: #0a1f14; margin-bottom: 4px;">Motivador</p>
+      <p style="font-size: 12px; color: var(--gray-600);">Incentiva a salir de las deudas y fomentar el ahorro.</p>
+    </div>
+  </div>
+
+  <div class="tone-grid">
+    <div class="tone-card good">
+      <div class="tone-header">✓ Así sí habla SanaYa</div>
+      <div class="tone-example">¡Tu cita con el Dr. García está confirmada! Lunes 15 de mayo a las 10:00 AM.</div>
+      <div class="tone-example">Recuerdo: Tu cita médica es en 2 horas. ¿Necesitas cambiar la hora o confirmar presencia?</div>
+      <div class="tone-example">Agendar una cita en SanaYa es muy fácil: busca, selecciona hora y listo.</div>
+      <div class="tone-example">Tu historial médico está actualizado y disponible para tu siguiente consulta.</div>
+    </div>
+    <div class="tone-card bad">
+      <div class="tone-header">✗ Así NO habla SanaYa</div>
+      <div class="tone-example">El paciente debe contactar al hospital para confirmar disponibilidad de turnos médicos.</div>
+      <div class="tone-example">ERROR CRÍTICO: Sistema de agendamiento no disponible.</div>
+      <div class="tone-example">Solo el 15% de los ecuatorianos cuida su salud adecuadamente.</div>
+      <div class="tone-example">¡¡¡FELICITACIONES POR TU CITA!!! ¡¡¡ERES EL MEJOR PACIENTE!!! 🎉🎉🎉</div>
+    </div>
+  </div>
+
+  <h3 style="font-size: 22px; font-weight: 700; color: #0a1f14; margin-top: 48px; margin-bottom: 24px; letter-spacing: -0.5px;">Microcopy de referencia</h3>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--green-500); font-weight: 600; margin-bottom: 12px;">Estado vacío</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">Sin citas agendadas</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">Busca especialistas en SanaYa y agenda tu primera cita médica en segundos.</p>
+    </div>
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 12px;">Alerta de cita</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">Cita en breve</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">Tu cita con el Dr. López es en 1 hora. Confirma presencia o reprograma si es necesario.</p>
+    </div>
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--green-400); font-weight: 600; margin-bottom: 12px;">Logro</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">Cita confirmada</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">¡Tu cita está confirmada! Recibirás un recordatorio 24 horas antes.</p>
+    </div>
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #f87171; font-weight: 600; margin-bottom: 12px;">Error</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">No disponible</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">Ese horario no está disponible. Intenta con otra hora o especialista.</p>
+    </div>
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal-400); font-weight: 600; margin-bottom: 12px;">Confirmación</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">Cita agendada</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">Consultorio SanaYa Centro - Mañana 10:00 AM con Dra. Martínez. Tu turno está reservado.</p>
+    </div>
+    <div style="background: white; border: 1px solid #e0e8e2; border-radius: 12px; padding: 20px;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gray-400); font-weight: 600; margin-bottom: 12px;">Bienvenida</div>
+      <p style="font-size: 14px; font-weight: 600; color: #0a1f14; margin-bottom: 6px;">Bienvenido a SanaYa</p>
+      <p style="font-size: 13px; color: var(--gray-600); line-height: 1.5;">Olvídate de las colas y esperas. Agenda tus citas médicas desde tu celular en menos de 1 minuto.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="brand-footer">
+  <div class="footer-logo">
+    <img src="Logo SanaYa.png" alt="SanaYa" style="width: 36px; height: 36px; object-fit: cover; border-radius: 10px;">
+    <div class="footer-wordmark">SanaYa</div>
+  </div>
+  <div style="display: flex; gap: 40px; align-items: center;">
+    <div style="text-align: center;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 4px;">Plataformas</div>
+      <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Android</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 4px;">Audiencia</div>
+      <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Ecuador (Familias en búsqueda de atención médica)</div>
+    </div>
+  </div>
+  <div class="footer-info">
+    <div class="footer-version">Manual de Marca v1.0 — 2026</div>
+    <div class="footer-copy">© 2026 SanaYa. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+</body>
+</html>
